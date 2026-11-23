@@ -1,0 +1,6 @@
+<h1>Lista de Empleados</h1>
+<a href="/empleados/crear/">Crear Empleado</a>
+<hr>
+{% for e in empleados %}
+  <p>{{ e.usuario.first_name }} {{ e.usuario.last_name }} - {{ e.departamento }} - {{ e.cargo }}</p>
+{% endfor %}
